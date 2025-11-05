@@ -1,0 +1,8 @@
+require("prototypes.items.turret")
+require("prototypes.recipes.turret-recipe")
+require("prototypes.entity.turrets")
+require("prototypes.entity.projectiles")
+require("prototypes.technology.shock-turret-tech")
+require("prototypes.technology.mining-speed-tech")
+require("prototypes.categories.ammo-category")
+require("prototypes.technology.shock-turret-effect-tech")

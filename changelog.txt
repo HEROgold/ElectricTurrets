@@ -1,0 +1,37 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+  Changes:
+    - Compatibility issue fix
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+  Changes:
+    - Upgradeable to Laser Turret via Fast replace and Upgrade Planners
+    - Increased Shock turret health to 400
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+  Changes:
+    - Updated to Factorio 1.1
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+  Changes:
+    - Increased Shock Turret range to 20
+    - Increased Shock Turret projectile acceleration
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+  Changes:
+    - Updated to Factorio 0.18
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+  Changes:
+    - Fixed Shock Turret upgrade modifier descriptions
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+  Changes:
+    - Increased Shock Turret attack range
+    - Increased Shock Turret energy drain per attack
+    - Added Shock Turret to Laser Turret upgrade
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+  Changes:
+    - Reduced gears used for crafting Shock Turrets
+    - Changed Damage multipliers

@@ -1,0 +1,14 @@
+{
+    "name": "heroic-electric-turrets",
+    "version": "3.0.0",
+    "title": "Electric Turrets",
+    "author": "HEROgold",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base >= 2.0",
+        "! ElectroTurret"
+    ],
+    "description": "Adds Electric Turrets, which are early game electric turrets. Fork of https://mods.factorio.com/mod/ElectroTurret"
+}

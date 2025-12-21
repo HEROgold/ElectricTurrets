@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "recipe",
-    name = "shock-turret",
+    name = "electric-turret",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -10,7 +10,7 @@ data:extend({
       {type = "item", name = "electronic-circuit", amount = 50}
     },
     results = {
-      {type = "item", name = "shock-turret", amount = 1}
+      {type = "item", name = "electric-turret", amount = 1}
     },
     requester_paste_multiplier = 20
   }

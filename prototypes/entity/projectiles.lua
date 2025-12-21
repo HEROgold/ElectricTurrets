@@ -6,7 +6,7 @@ data:extend({
     flags = {"not-on-map"},
     animations = {
       {
-        filename = "__ElectroTurret__/graphics/entity/shock-turret/electric-explosion.png",
+        filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-explosion.png",
         priority = "high",
         width = 128,
         height = 128,
@@ -19,14 +19,14 @@ data:extend({
     light = {intensity = 1, size = 10},
     sound = {
       
-      {filename = "__ElectroTurret__/sound/explosion.ogg", volume = 1.0}
+      {filename = "__heroic-electric-turret__/sound/explosion.ogg", volume = 1.0}
     }
   },
   
-  -- Definizione del proiettile shock-lightning
+  -- Definizione del proiettile electric-lightning
   {
     type = "projectile",
-    name = "shock-lightning",
+    name = "electric-lightning",
     flags = {"not-on-map"},
     acceleration = 0.05,
     action = {
@@ -47,7 +47,7 @@ data:extend({
     },
     light = { intensity = 0.5, size = 10 },
      animation = {
-      filename = "__ElectroTurret__/graphics/entity/shock-turret/beam-body.png",
+      filename = "__heroic-electric-turret__/graphics/entity/electric-turret/beam-body.png",
       tint = {r = 1.0, g = 1.0, b = 1.0},
       frame_count = 16,   -- Numero di frame totali
       width = 45,         -- Larghezza di un singolo frame
@@ -59,7 +59,7 @@ data:extend({
     },
     speed = 0.30,
     shadow = {
-      filename = "__ElectroTurret__/graphics/entity/shock-turret/projectile-shadow.png",
+      filename = "__heroic-electric-turret__/graphics/entity/electric-turret/projectile-shadow.png",
       frame_count = 1,
       width = 16,
       height = 16,

@@ -2,14 +2,14 @@ data:extend(
 {
   {
     type = "technology",
-    name = "shock-turret",
-    icon = "__ElectroTurret__/graphics/technology/shock-turret.png",
+    name = "electric-turret",
+    icon = "__heroic-electric-turret__/graphics/technology/electric-turret.png",
     icon_size = 128,
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "shock-turret"
+        recipe = "electric-turret"
       }
     },
     prerequisites = {"military", "gun-turret"},

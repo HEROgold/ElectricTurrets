@@ -1,6 +1,6 @@
-function shock_turret_extension(inputs)
+function electric_turret_extension(inputs)
     return {
-        filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-start.png",
+        filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-start.png",
         priority = "medium",
         width = 66,
         height = 67,
@@ -13,9 +13,9 @@ function shock_turret_extension(inputs)
     }
 end
 
-function shock_turret_extension_shadow(inputs)
+function electric_turret_extension_shadow(inputs)
     return {
-        filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-start-shadow.png",
+        filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-start-shadow.png",
         width = 92,
         height = 50,
         frame_count = inputs.frame_count or 15,
@@ -28,9 +28,9 @@ function shock_turret_extension_shadow(inputs)
     }
 end
 
-function shock_turret_extension_mask(inputs)
+function electric_turret_extension_mask(inputs)
     return {
-        filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-start-mask.png",
+        filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-start-mask.png",
         flags = { "mask" },
         width = 51,
         height = 47,
@@ -47,11 +47,11 @@ end
 data:extend({
     {
         type = "electric-turret",
-        name = "shock-turret",
-        icon = "__ElectroTurret__/graphics/icons/shock-turret.png",
+        name = "electric-turret",
+        icon = "__heroic-electric-turret__/graphics/icons/electric-turret.png",
         icon_size = 64,
         flags = { "placeable-player", "placeable-enemy", "player-creation" },
-        minable = { mining_time = 0.5, result = "shock-turret" },
+        minable = { mining_time = 0.5, result = "electric-turret" },
         max_health = 400,
         resistances = {
             {
@@ -79,22 +79,22 @@ data:extend({
         },
         folded_animation = {
             layers = {
-                shock_turret_extension { frame_count = 1, line_length = 1 },
-                shock_turret_extension_shadow { frame_count = 1, line_length = 1 },
-                shock_turret_extension_mask { frame_count = 1, line_length = 1 }
+                electric_turret_extension { frame_count = 1, line_length = 1 },
+                electric_turret_extension_shadow { frame_count = 1, line_length = 1 },
+                electric_turret_extension_mask { frame_count = 1, line_length = 1 }
             }
         },
         preparing_animation = {
             layers = {
-                shock_turret_extension {},
-                shock_turret_extension_shadow {},
-                shock_turret_extension_mask {}
+                electric_turret_extension {},
+                electric_turret_extension_shadow {},
+                electric_turret_extension_mask {}
             }
         },
         prepared_animation = {
             layers = {
                 {
-                    filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun.png",
+                    filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun.png",
                     line_length = 8,
                     width = 68,
                     height = 68,
@@ -103,7 +103,7 @@ data:extend({
                     shift = { -0.03125, -1 }
                 },
                 {
-                    filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-mask.png",
+                    filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-mask.png",
                     flags = { "mask" },
                     line_length = 8,
                     width = 54,
@@ -114,7 +114,7 @@ data:extend({
                     shift = { -0.03125, -1.3125 }
                 },
                 {
-                    filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-shadow.png",
+                    filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-shadow.png",
                     line_length = 8,
                     width = 88,
                     height = 52,
@@ -127,9 +127,9 @@ data:extend({
         },
         folding_animation = {
             layers = {
-                shock_turret_extension { run_mode = "backward" },
-                shock_turret_extension_shadow { run_mode = "backward" },
-                shock_turret_extension_mask { run_mode = "backward" }
+                electric_turret_extension { run_mode = "backward" },
+                electric_turret_extension_shadow { run_mode = "backward" },
+                electric_turret_extension_mask { run_mode = "backward" }
             }
         },
         base_picture = {
@@ -143,7 +143,7 @@ data:extend({
                     scale = 0.5
                 },
                 {
-                    filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-base-mask.png",
+                    filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-base-mask.png",
                     flags = { "mask" },
                     width = 54,
                     height = 45,
@@ -160,13 +160,13 @@ data:extend({
         },
         attack_parameters = {
             type = "projectile",
-            ammo_category = "shock-turret",
+            ammo_category = "electric",
             cooldown = 25,
             projectile_center = { -0.09375, -0.2 },
             projectile_creation_distance = 1.4,
             range = 20,
             sound = {
-                filename = "__ElectroTurret__/sound/shock-turret-attack.ogg",
+                filename = "__heroic-electric-turret__/sound/electric-turret-attack.ogg",
                 volume = 0.4
             },
             damage_modifier = 1.0,
@@ -180,7 +180,7 @@ data:extend({
                         action_delivery = {
                             {
                                 type = "projectile",
-                                projectile = "shock-lightning",
+                                projectile = "electric-lightning",
                                 starting_speed = 0.8
                             }
                         }
@@ -206,7 +206,7 @@ data:extend({
                             scale = 0.5
                         },
                         {
-                            filename = "__ElectroTurret__/graphics/entity/shock-turret/shock-turret-gun-shadow.png",
+                            filename = "__heroic-electric-turret__/graphics/entity/electric-turret/electric-turret-gun-shadow.png",
                             line_length = 8,
                             width = 88,
                             height = 52,

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Changes:
+    - Updated for Factorio 2.1 (factorio_version and base dependency bumped to 2.1).
+    - Defined the previously-undefined "electric" ammo category so the turret and its upgrades load.
+    - Tesla weapon research now also applies to the electric turret (one-way), while the mod's own
+      damage/speed upgrades affect only the electric turret. Space Age is an optional dependency.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.0
   Changes:
     - cloned the mod.

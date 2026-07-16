@@ -1,3 +1,4 @@
+require("prototypes.ammo-category")
 require("prototypes.items.turret")
 require("prototypes.recipes.turret-recipe")
 require("prototypes.entity.turrets")
